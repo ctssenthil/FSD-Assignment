@@ -1,0 +1,16 @@
+spring.mvc.view.prefix: /WEB-INF/
+spring.mvc.view.suffix: .jsp
+
+datasource:
+  sampleapp:
+    url: jdbc:oracle:thin:@//10.206.193.12:1521/bodevdb.global.trafigura.com
+    username: TRAF_TITAN_OWNER_DEV12
+    password: TRAF_TITAN_OWNER_DEV12
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.OracleDialect
